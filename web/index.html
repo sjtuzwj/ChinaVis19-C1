@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+    <title>VAST Challenge 2019</title>
+    <!-- css library -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/buttons.css">
+	<!-- static data -->
+        <!-- 甘特图 -->
+    <script src="staticData/ganttData/RefinedDayDic.js"></script>
+            <!-- 雷达图 -->
+    <script src="staticData/radarData/clusterDay1.js"></script>
+    <script src="staticData/radarData/clusterDay2.js"></script>
+    <script src="staticData/radarData/clusterDay3.js"></script>
+    <script src="staticData/radarData/TimeclusterDay1.js"></script>
+    <script src="staticData/radarData/TimeclusterDay2.js"></script>
+    <script src="staticData/radarData/TimeclusterDay3.js"></script>
+    <script src="staticData/radarData/RefinedDay1Dic.js"></script>
+    <script src="staticData/radarData/RefinedDay2Dic.js"></script>
+    <script src="staticData/radarData/RefinedDay3Dic.js"></script>
+        <!-- 折线图 -->
+    <script src="staticData/lineData/refinedDay1.js"></script>
+    <script src="staticData/lineData/refinedDay2.js"></script>
+    <script src="staticData/lineData/refinedDay3.js"></script>
+    <!-- js library -->
+    <script src="jslib/jquery.min.js"></script>
+    <script src="jslib/d3.js"></script>
+    <script src="jslib/d3-ForceEdgeBundling.js"></script>
+    <script src="jslib/underscore-min.js"></script>
+    <script src="jslib/bootstrap.min.js"></script>
+    <script src="jslib/buttons.js"></script>
+    <script src="jslib/echarts.js"></script>
+    <script src="jslib/echarts.min.js"></script>
+    <script src="jslib/dataTool.min.js"></script>
+
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+    
+
+<body>
+
+
+<div id="left-div">
+   <div id="cluster-overview" class="outer-div">
+   	<div id="clusterChart" style="height:100%;width:100%;"></div>
+   </div>
+   <div id="themeRiver" style="overflow-y: auto;" class = "outer-div">
+
+    </div>
+    <div id="gantt" class="outer-div"> </div>
+</div>
+<div id="right-div">
+	<div id="map" class="outer-div">
+        <div id="checkboxDiv">
+            <form action="" method="get">
+                <label><input type="checkbox" name="category" value="hotmap"  checked="checked" id="hotmap" onclick="checkboxhotmap()" />热力图 </label>
+                <label><input type="checkbox" name="category" value="cluster" id="cluster" onclick="checkboxcluster()" />群体轨迹 </label>
+                <label><input type="checkbox" name="category" value="single" id="single" onclick="checkboxsingle()" />个人轨迹 </label>
+            </form>
+        </div>
+        <div id="mapChart"></div>
+    </div>
+	<div id="line" class="outer-div"></div>
+	<div id="cluster-detail" style="position: absolute;" class="outer-div">
+        <div id="radar" style="position: absolute;height: 100%; left:0%; width: 30%; top: 0%;"></div>
+        <div id="boxplot" style="position: absolute;height: 100%; left:30%; width: 70%; top: 0%;"> </div>
+    </div>
+</div>
+
+<!-- js -->
+<script src="js/map.js"></script>
+<script src="js/themeRiver.js"></script>
+<script src="js/radar.js"></script>
+<script src="js/boxplot.js"></script>
+<script src="js/line.js"></script>
+<script src="js/gantt.js"></script>
+<script src="js/cluster.js"></script>
+<script src="js/observer.js"></script>
+
+</body>
+
+
+</html>
