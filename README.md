@@ -1,5 +1,6 @@
 # ChinaVis19-1
-
+## 链接
+http://chinavis.org/2019/challenge.html
 ## 注意
 访问本地json的安全性问题,只能使用远端json  
 右键chrome图标选择属性，在“目标/target”那一栏里的最后加上--disable-web-security
